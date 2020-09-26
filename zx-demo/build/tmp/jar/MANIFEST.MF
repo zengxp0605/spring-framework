@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: zx-demo
-Automatic-Module-Name: zx.demo
-Implementation-Version: 5.0.20.BUILD-SNAPSHOT
-Created-By: 1.8.0_202 (Oracle Corporation)
-

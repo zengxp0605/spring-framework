@@ -1,1 +1,0 @@
-/Users/stan/thirdpart/spring-framework/zx-demo/build/classes/java/main/com/stan/demo/Application.class:/Users/stan/thirdpart/spring-framework/zx-demo/build/classes/java/main/com/stan/demo/entity/User.class
