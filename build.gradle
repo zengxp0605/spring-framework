@@ -103,7 +103,7 @@ configure(allprojects) { project ->
 
 	compileJava.options*.compilerArgs = commonCompilerArgs +
 			["-Xlint:varargs", "-Xlint:fallthrough", "-Xlint:rawtypes",
-			 "-Xlint:deprecation", "-Xlint:unchecked", "-Werror"]
+			 "-Xlint:deprecation", "-Xlint:unchecked"] // , "-Werror"]
 
 	compileTestJava.options*.compilerArgs = commonCompilerArgs +
 			["-Xlint:-varargs", "-Xlint:-fallthrough", "-Xlint:-rawtypes",
@@ -151,6 +151,8 @@ configure(allprojects) { project ->
 	}
 
 	repositories {
+//		mavenLocal()
+//		maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 		maven { url "https://repo.spring.io/libs-release" }
 	}
 
@@ -322,4 +324,10 @@ def qualifyVersionIfNecessary(version) {
 		}
 	}
 	return version
+}
+
+task helloworld {
+	doLast {
+		println("hello world")
+	}
 }
